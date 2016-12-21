@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Vue.js + Star Wars API</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.6/vue.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/semantic-ui@2.2.6/dist/semantic.css">
+</head>
+
+<body>
+    <div id="app" class="ui container">
+        <h1>Vue.js + Star Wars API</h1>
+
+        <h2 class="ui header">
+            <div class="content">
+                People
+                <div class="sub header">
+                    Showing {{people.length}} out of {{count}}
+                </div>
+            </div>
+        </h2>
+
+        <div class="ui section divider"></div>
+
+        <div class="ui list">
+            <div class="item" v-for="person in people">
+                <i class="user icon"></i>
+                <div class="content">
+                    {{person.name}}
+                </div>
+            </div>
+        </div>
+
+        <div class="ui" v-if="loading">
+            <div class="ui active inverted dimmer">
+                <div class="ui text loader">Loading</div>
+            </div>
+        </div>
+        
+        <button v-else class="ui primary button" v-on:click="loadMore">Load More</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
