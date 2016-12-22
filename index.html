@@ -37,7 +37,7 @@
             </div>
         </div>
         
-        <button v-else class="ui primary button" v-on:click="loadMore">Load More</button>
+        <button v-if="!loading && next" class="ui primary button" v-on:click="loadMore">Load More</button>
     </div>
     <script src="index.js"></script>
 </body>
