@@ -4,17 +4,43 @@
 
 To create a *really* simple application with vue.js that makes use of Fetch API and ES2015 features.
 
-Install dependencies:
+[View Application](http://vuejs-star-wars.surge.sh/)
+
+### Install dependencies:
 
 ```
 npm install 
 ```
 
-Start the app:
+### Start the app:
 
 ```
 npm start
 ```
+
+### Deployment:
+
+Using [surge](https://surge.sh/) to host this static site for **FREE** :tada:
+
+You'll need surge installed globally:
+
+``` 
+npm install -g surge
+```
+
+After that, alter `package.json`
+
+```
+"deploy": "surge -d some-unique-app-name.surge.sh"
+```
+
+Once you've done that, you can simply run:
+
+```
+npm run deploy
+```
+
+To deploy your application.
 
 ## Just *how* simple is it?
 

@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "description": "Simple vue.js application that uses the Star Wars API written with ES2015",
   "scripts": {
-    "start": "lite-server"
+    "start": "lite-server",
+    "deploy": "surge -d vuejs-star-wars.surge.sh"
   },
   "author": "Mark Pritchett",
   "license": "MIT",
