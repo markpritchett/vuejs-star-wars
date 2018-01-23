@@ -13,7 +13,7 @@
             this.getPeople();
         },
         methods: {
-            getPeople(url = 'http://swapi.co/api/people') {
+            getPeople(url = 'https://swapi.co/api/people') {
                 this.loading = true;
                 fetch(url)
                     .then(response => response.json())
